@@ -91,7 +91,6 @@ fun BookListItem(book: Book, onClick: () -> Unit) {
             .padding(8.dp)
             .background(Color(0xFFF5F5F5))
     ) {
-        // Загрузка картинки (если используете библиотеку Coil, например)
         Image(
             painter = rememberAsyncImagePainter(book.image),
             contentDescription = book.title,
